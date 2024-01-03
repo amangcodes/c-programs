@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+	int arr[50][50][50],x,y,z,i=0,j=0,k=0,sum=0,num;
+  
+	printf("Enter the number of rows:");
+	scanf("%d",&x);
+  
+	printf("Enter the number of coloumn:");
+	scanf("%d",&y);
+	
+	printf("Enter the number of layers:");
+	scanf("%d",&z);
+  
+	for(i=0;i<z;i++){
+		for(j=0;j<x;j++){
+			for(k=0;k<y;k++){
+      printf("Enter the value a[%d][%d][%d]",i,j,k);  
+			scanf("%d",&arr[i][j][k]);
+			}	
+    }
+	}
+   
+	for(i=0;i<z;i++){
+    printf("The array: \n");
+		for(j=0;j<x;j++){
+		  for(k=0;k<y;k++){
+		  num=arr[i][j][k];
+			printf("%d ",num);
+		  } 
+      printf("\n"); 
+		}        
+		printf("\n\n");
+	}
+	for(i=0;i<z;i++){
+		for(j=0;j<x;j++){
+		  for(k=0;k<y;k++){
+			sum+=arr[i][j][k];
+		  }
+		} 
+	}
+	
+	printf("%d is the sum of the arrays",sum);
+  return 0;
+}
