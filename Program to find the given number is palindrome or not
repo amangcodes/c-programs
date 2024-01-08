@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+ int num,rem,sum,temp;
+ printf("Enter any number \n");
+ scanf("%d",&num);
+ sum=0;
+ temp=num;
+ while(num>0)
+ {
+ rem = num % 10;
+ sum = sum * 10 + rem;
+ num = num /10;
+ }
+ if(temp == sum)
+ {
+ printf("%d Number is palindrome",sum);
+ } else {
+ printf("%d Number is not palindrome", temp);
+ }
+}
