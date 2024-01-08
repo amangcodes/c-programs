@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+ int a,b,s;
+ printf("Enter the two numbers \n");
+ scanf("%d%d”,&a,&b);
+ s=a>b?b:a;
+ printf("Smallest of 2 number: %d \n",s);
+ }
