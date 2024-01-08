@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+ int a,b,c,d,e,l;
+ printf(“ Enter 5 numbers \n”);
+ scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+ l=a;
+ if (l<b)
+ {
+ l=b;
+ }
+ if (l<c)
+ {
+ l=c;
+ }
+ if (l<d)
+ {
+ l=d;
+ }
+ if (l<e)
+ {
+ l=e;
+ }
+ printf("Largest among these is : %d \n",l);
+ }
