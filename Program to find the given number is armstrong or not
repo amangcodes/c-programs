@@ -1,0 +1,34 @@
+#include <stdio.h>
+void main() {
+
+ int a, d, m, i, j, l, x, v=0, t=0;
+
+ printf("Enter a number for armstrong check:");
+ scanf("%d", &a);
+
+ x = a;
+
+ for(i=0; a>0; i++){
+ a/=10;
+ }
+
+ printf("Number of digits: %d \n", i);
+ a = x;
+
+ for(j=0; j!=i; j++){
+ m = a%10;
+ t=m;
+ for(l=1; l!=i; l++){
+ m=t*m;
+ d = m;
+ }
+ v+=d;
+ a/=10;
+ }
+ if(v==x){
+ printf("Is an Armstrong Number");
+ }else{
+ printf("Is not an Armstrong Number");
+ }
+ return 0;
+}
